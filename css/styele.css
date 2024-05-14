@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat|Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  line-height: 1rem;
+  letter-spacing: 0.08rem;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  font-size: 1.4rem;
+  font-weight: inherit;
+  background-color: #bbb;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.conent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 4rem;
+}
+.conent h1 span {
+  font-family: "Dancing Script", cursive;
+  color: rebeccapurple;
+  font-size: 4rem;
+  margin-right: 2rem;
+}
+.conent h1 {
+  font-family: "Righteous", cursive;
+  background: url("https://media.giphy.com/media/FE0WTM8BG754I/giphy.gif")
+    center center no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 8rem;
+  letter-spacing: 10px;
+  background-size: cover;
+  margin: 0px;
+  color: transparent;
+}
+.conent p {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 3px;
+  box-shadow: none;
+}
+.cowndown {
+  display: flex;
+  transform: scale(2);
+}
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+.time h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1;
+  margin: 0 0 5px;
+}
+@media (max-width: 500px) {
+  .time {
+    margin: 5px;
+  }
+  .time h2 {
+    font-size: 12px;
+  }
+  .time small {
+    font-size: 10px;
+  }
+}
